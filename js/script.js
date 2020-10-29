@@ -1,11 +1,5 @@
-function car(sw) {
-	var:pic;
-	if (sw==0) {
-		pic = "image/c63s.jpg"
-	}	else {
-		pic = "image/m3.jpg"
+function agecheck(){
+	if (document.getElementById('age').checked) {
+		alert("You confirm you are older than 18.")
 	}
-	document.getElementById('image/c63s').src=pic;
 }
-		
-			

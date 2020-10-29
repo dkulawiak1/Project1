@@ -1,6 +1,7 @@
 body {
 	text-align:center;
 	background-color:#6A5ACD;
+	font-family:'Lato' , sans-serif;
 	
 }
 h1 {
@@ -11,19 +12,67 @@ h1 {
 	
 }
 
+#checkbox-label{
+	vertical-align:middle;
+	display:inline-block;
+}
+input[type=checkbox]{
+	display:inline;
+}
+
 label {
+	width:240px;
 	font-size:15pt;
 	color:#FFFAFA;
+	margin: 5px;
+	display:inline-block;
+	font-weight:bold;	
+}
+
+input {
+	border-radius: 20px;
+	border-color:#DC143C;
+	display:block;
+	padding:20px 20px;
+	margin:auto;
+	background-color:black;
+	color:white;
+	font-weight:bold;
 }
 
 
+::placeholder {
+	color:white;
+}
+	
 
 input[type=submit]{
 	color:black;
 	background-color:white;
-	width:50%;
-	
+	display:block;	
 }
+
+
+@media only screen and (max-width: 750px){
+	label,input,h1{
+		text-align:center;
+		margin:auto;
+		display:block;
+	}
+	body{
+		background-color:#00FFFF;
+	}
+}
+
+@media only screen and (max-width: 900px) {
+	label,input,h1{
+		font-size:50px;
+		background-color:#0000FF;
+	}
+}
+
+
+
 	
 
 	
